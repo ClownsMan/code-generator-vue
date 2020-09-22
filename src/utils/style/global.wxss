@@ -1,0 +1,129 @@
+#app {
+  height: 100%;
+}
+.layout.ant-layout {
+  height: auto;
+  overflow-x: hidden;
+}
+.layout.ant-layout.ant-layout-has-sider {
+  flex-direction: row;
+  height: 100vh;
+}
+.layout.ant-layout .layoutMode {
+  width: 100%;
+  position: relative;
+}
+.layout.ant-layout .layoutMode .ant-layout-header {
+  width: 100%;
+  height: 64px;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .trigger {
+  font-size: 20px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .trigger:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header {
+  display: flex;
+  height: 64px;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .nav-header-logo {
+  display: inline-block;
+  max-width: 10%;
+  padding: 0 20px;
+  background: #000;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .nav-header-menu {
+  display: inline-block;
+  height: 64px;
+  line-height: 64px;
+  flex: 1 1 800px;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header,
+.layout.ant-layout .layoutMode .ant-layout-header .header {
+  height: 64px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  position: relative;
+}
+.layout.ant-layout .layoutMode .ant-layout-header,
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .user-info {
+  float: right;
+  height: 64px;
+  margin-right: 20px;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .action,
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .user-info .action {
+  cursor: pointer;
+  padding: 0 12px;
+  display: inline-block;
+  transition: all 0.3s;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.65);
+}
+.layout.ant-layout .layoutMode .ant-layout-header .action:hover,
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .user-info .action:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+.layout.ant-layout .layoutMode .ant-layout-header .action i,
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .user-info .action i {
+  font-size: 18px;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .avatar,
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .user-info .avatar {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .avatar img,
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .user-info .avatar img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+.layout.ant-layout .layoutMode .ant-layout-header .userDropdown,
+.layout.ant-layout .layoutMode .ant-layout-header .nav-header .user-info .userDropdown {
+  display: inline-block;
+}
+.layout.ant-layout .layoutMode .ant-layout-header.fixedHeader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  width: calc(-140vw);
+}
+.layout.ant-layout .layoutMode .ant-layout-header.fixedHeader.collapsed {
+  width: calc(0vw);
+}
+.layout.ant-layout .layoutMode .ant-layout-header.mobile {
+  width: 100%;
+}
+.layout.ant-layout .layoutMode .ant-layout-header.fixedHeader.collapsed.mobile {
+  width: 100%;
+}
+.layout.ant-layout .layoutMode .ant-layout-content {
+  padding: 20px;
+  min-height: auto;
+}
+.layout.ant-layout .layoutMode .ant-layout-content.fixedHeader {
+  padding-top: 80px;
+}
+.ant-layout-sider {
+  height: 100vh;
+  overflow-y: auto;
+}
+.ant-layout-sider::-webkit-scrollbar {
+  display: none;
+}
+.drawer-sider .ant-drawer-content-wrapper .ant-drawer-body {
+  height: 100%;
+  padding: 0;
+}
+.drawer-sider .ant-drawer-content-wrapper .ant-drawer-body .ant-layout-sider {
+  width: 100%;
+  height: 100%;
+}
